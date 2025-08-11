@@ -23,4 +23,4 @@
 чтобы поддерживать экономику игры в равновесии и удерживать игроков разного профиля.
 ***
 ### Файлы
-[`proj_fantasy.sql`]("https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/fantasy_MMO/proj_fantasy.sql") - SQL скрипты и выводы в виде комментариев.
+[proj_fantasy.sql](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/fantasy_MMO/proj_fantasy.sql) - SQL скрипты и выводы в виде комментариев.
