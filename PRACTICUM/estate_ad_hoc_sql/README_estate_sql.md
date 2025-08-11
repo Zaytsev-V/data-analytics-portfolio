@@ -18,8 +18,8 @@
    - Исходя из анализа незакрытых публикаций в Лен. области стоит обратить внимание на квартиры не дороже 4млн. руб.
 ***
 ### Файлы
-* `task1_active_abs.sql` - анализ сроков активности
-* `task2_seasonality_of_abs.sql` - анализ сезонности публикаций/продаж
-* `task3_leningrad_region.sql` - анализ недвижимости Ленинградской области
-* `analytical_note` - аналитическая записка для агентсва недвижимости
+* [task1_active_abs.sql](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/estate_ad_hoc_sql/task1_active_ads.sql) - анализ сроков активности
+* [task2_seasonality_of_abs.sql](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/estate_ad_hoc_sql/task2_seasonality_of_ads.sql) - анализ сезонности публикаций/продаж
+* [task3_leningrad_region.sql](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/estate_ad_hoc_sql/task3_leningrad_region.sql) - анализ недвижимости Ленинградской области
+* [analytical_note](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/estate_ad_hoc_sql/analytical_note..pdf) - аналитическая записка для агентсва недвижимости
 
