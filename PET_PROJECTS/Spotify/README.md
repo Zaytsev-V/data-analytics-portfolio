@@ -19,4 +19,4 @@
 * содержать ненормативную лексику.
 ***
 ## Файлы
-[Spotify](
+[Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Spotify/Spotify.ipynb) - тетрадка `jupyter notebook` с исследовательским анализом треков с сервиса Spotify.
