@@ -5,7 +5,7 @@
 ## Пет-проекты
 | Проект | Описание | Стек |
 | ----- | ----- | ----- |
-
+| [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Исследовательский анализ (EDA) музыкальных треков с сервиса Spotify | python / pandas/ matplotlib / seaborn |
 
 ## Практикум
 | Проект | Описание | Стек |
