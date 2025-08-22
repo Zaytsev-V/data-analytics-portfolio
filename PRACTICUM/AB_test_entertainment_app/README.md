@@ -37,3 +37,6 @@
 ### Рекомендация
 
 Стоит внедрять новый алгоритм в приложение.
+
+---
+[AB_test_ent_app.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/AB_test_entertainment_app/AB_test_ent_app.ipynb) - тетрадка `jupyter_notebook` с проектом, графиками и выводами.
