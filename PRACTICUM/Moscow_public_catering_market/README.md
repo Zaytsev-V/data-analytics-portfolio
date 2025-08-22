@@ -36,4 +36,4 @@
 привлечения большего кол-ва клиентов.
 ***
 ### Файлы 
-[catering_market.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Moscow_public_catering_market/catering_market.ipynb) - тетрадка `jupyter notebook` с проектом, графиками и выводами.
+[Moscow_public_catering_market.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Moscow_public_catering_market/catering_market.ipynb) - тетрадка `jupyter notebook` с проектом, графиками и выводами.
