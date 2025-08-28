@@ -28,3 +28,5 @@
 Эти шаги помогут оптимизировать продажи и улучшить понимание клиентской базы с минимумом усилий.
 
 ### Файлы
+
+[Coffee_sales](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Coffee/Coffee_sales.ipynb)- тетрадка `jupyter notebook` с исследовательским анализом продаж в кафе.
