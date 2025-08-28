@@ -6,6 +6,7 @@
 | # | Проект | Описание | Стек |
 | -- | ----- | ----- | ----- |
 | 1 | [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Исследовательский анализ (EDA) музыкальных треков с сервиса Spotify | python / pandas/ matplotlib / seaborn |
+| 2 | [Coffee](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Исследовательский анализ (EDA) продаж кофейни в Кейптауне за год | python / pandas/ matplotlib / seaborn |
 
 ## Практикум
 | # | Проект | Описание | Стек |
