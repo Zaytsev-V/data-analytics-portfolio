@@ -1,4 +1,4 @@
-## Анализ музыкальных треков с сервиса Spotify
+## Что влияет на популярность музыкальных треков с сервиса Spotify?
 Данные взяты с Kaggle: https://www.kaggle.com/datasets/melissamonfared/spotify-tracks-attributes-and-popularity/data
 
 ## Цель анализа
