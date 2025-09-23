@@ -1,4 +1,4 @@
-## Анализ проадж кофейни в Кейптауне.
+## Какой напиток самый популярный в кофейне в Кейптауне?
 Данные взяты с Kagle [Coffee Store Sales](https://www.kaggle.com/datasets/reignrichard/coffee-store-sales).
 
 ### Цель анализа:
