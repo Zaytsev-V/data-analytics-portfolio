@@ -36,4 +36,4 @@
 ---
 ## Файлы и ссылки
 - [afisha.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Ticket_service_Afisha/afisha.ipynb) - тетрадка `jupyter_notebook` с проектом, графиками и выводами.
-- <a href="https://datalens.yandex/y0hrrc5shvauj" >Дашборд</a> - ссылка на DataLens с дашбордом и выводами предварительного анализа.
+- <a href="https://datalens.yandex/y0hrrc5shvauj" target="_blank" rel="noopener noreferrer">Дашборд</a> - ссылка на DataLens с дашбордом и выводами предварительного анализа.
