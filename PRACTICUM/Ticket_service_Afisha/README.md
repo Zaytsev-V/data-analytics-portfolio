@@ -9,6 +9,7 @@
 Разобраться, почему произошло изменение в пользовательском спросе в конце октября 2024 г. (упал спрос).
 
 *Задачи*  
+- построить дашборд для предварительного анализа
 - изучить распределение заказов по сегментам и сезонности
 - исследовать осеннюю активность пользователей
 - выявить популярные события и партнеров
@@ -16,6 +17,7 @@
 
 ---
 ## Инструменты
+- DataLens
 - pandas
 - matplotlib
 - scipy
@@ -32,5 +34,6 @@
 а также планировать кампании с учётом сезонности и предпочтений мобильных пользователей.
 
 ---
-## Файлы
-[afisha.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Ticket_service_Afisha/afisha.ipynb) - тетрадка `jupyter_notebook` с проектом, графиками и выводами.
+## Файлы и ссылки
+- [afisha.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Ticket_service_Afisha/afisha.ipynb) - тетрадка `jupyter_notebook` с проектом, графиками и выводами.
+- [Дашборд](https://datalens.yandex/y0hrrc5shvauj) - ссылка на DataLens с дашбордом и выводами предварительного анализа.
