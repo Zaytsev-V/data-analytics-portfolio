@@ -31,3 +31,6 @@
 Для сглаживания таких спадов рекомендуется усилить работу с ключевыми регионами и эффективными партнёрами, 
 а также планировать кампании с учётом сезонности и предпочтений мобильных пользователей.
 
+---
+## Файлы
+[afisha.ipynb](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PRACTICUM/Ticket_service_Afisha/afisha.ipynb) - тетрадка `jupyter_notebook` с проектом, графиками и выводами.
