@@ -1,12 +1,13 @@
 # data-analytics-portfolio
 
-В данном репозитории хранятся проекты, которые я сделал обучаясь в Яндекс Практикуме, а также пет-проекты. Представлены проекты, сделанные с использованием PasgreSQL, Python (pandas) и DataLens.
+В данном репозитории хранятся некоторые проекты, которые я сделал в Яндекс Практикуме, а также мои пет-проекты. Представлены проекты, сделанные с использованием PasgreSQL, Python (pandas) и DataLens.
 
 ## Пет-проекты
 | # | Проект | Описание | Стек |
 | -- | ----- | ----- | ----- |
 | 1 | [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Что влияет на популярность музыкальных треков с сервиса Spotify? | python / pandas/ matplotlib / seaborn |
 | 2 | [Coffee](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Выявляю тренды и закономерности в продажах кофейни в Кейптауне за год | python / pandas/ matplotlib / seaborn |
+| 3 | [Clothing Store](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Clothing_store) | Применяю ABC, XYZ и RFM анализы для магазина одежды | python / pandas/ matplotlib / seaborn |
 
 ## Практикум
 | # | Проект | Описание | Стек |
