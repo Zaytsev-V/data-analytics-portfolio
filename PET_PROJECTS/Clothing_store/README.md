@@ -29,6 +29,6 @@
 ---
 ## Файлы
 [clothing_store_eda](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_eda.ipynb) - тетрадка `jupyter notebook` с описанием проекта и проведенным исследовательским анализом (EDA)  
-[clothing_store_abc](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_abc.ipynb) - тетрадка `jupyter notebook` c ABC-анализом и выводами  
-[clothing_store_rfm](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_rfm.ipynb) - тетрадка `jupyter notebook` c XYZ-анализом и выводами  
+[clothing_store_abc](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_abc.ipynb) - тетрадка `jupyter notebook` c ABC-XYZ анализом и выводами  
+[clothing_store_rfm](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_rfm.ipynb) - тетрадка `jupyter notebook` c RFM-анализом и выводами  
 [clothing_store_summary](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/Clothing_store/clothing_store_summary.ipynb) - тетрадка `jupyter notebook` с итоговыми выводами и рекомендациями
