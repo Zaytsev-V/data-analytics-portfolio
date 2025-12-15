@@ -5,9 +5,10 @@
 ## Пет-проекты
 | # | Проект | Описание | Стек |
 | -- | ----- | ----- | ----- |
-| 1 | [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Что влияет на популярность музыкальных треков с сервиса Spotify? | python / pandas/ matplotlib / seaborn |
-| 2 | [Coffee](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Выявляю тренды и закономерности в продажах кофейни в Кейптауне за год | python / pandas/ matplotlib / seaborn |
-| 3 | [Clothing Store](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Clothing_store) | Применяю ABC, XYZ и RFM анализы для магазина одежды | python / pandas/ matplotlib / seaborn |
+| 1 | [World Bank](https://github.com/Zaytsev-V/etl_pipeline) | Исследую показатели с сайта Всемирного Банка | python / pandas / sql / datalens |
+| 2 | [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Что влияет на популярность музыкальных треков с сервиса Spotify? | python / pandas/ matplotlib / seaborn |
+| 3 | [Coffee](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Выявляю тренды и закономерности в продажах кофейни в Кейптауне за год | python / pandas/ matplotlib / seaborn |
+| 4 | [Clothing Store](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Clothing_store) | Применяю ABC, XYZ и RFM анализы для магазина одежды | python / pandas/ matplotlib / seaborn |
 
 ## Практикум
 | # | Проект | Описание | Стек |
