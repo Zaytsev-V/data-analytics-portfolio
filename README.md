@@ -1,21 +1,27 @@
 # data-analytics-portfolio
 
-В данном репозитории хранятся некоторые проекты, которые я сделал в Яндекс Практикуме, а также мои пет-проекты. Представлены проекты, сделанные с использованием PasgreSQL, Python (pandas) и DataLens.
+### Проекты и кейсы
+В этом репозитории собраны проекты, демонстрирующие навыки решения прикладных бизнес-задач.Я фокусируюсь на том, чтобы превращать сырые данные в понятные выводы, которые помогают бизнесу экономить бюджет или увеличивать прибыль.
 
-## Пет-проекты
-| # | Проект | Описание | Стек |
+Проекты охватывают полный цикл работы с данными: от написания ETL-пайплайнов и SQL-запросов до построения интерактивных дашбордов и проверки статистических гипотез.
+
+## Самостоятельные проекты (Business Cases)
+*Здесь я самостоятельно формулировал задачу, искал данные и выбирал инструменты анализа.*
+| # | Проект | Бизнес-задача | Стек |
 | -- | ----- | ----- | ----- |
-| 1 | [World Bank](https://github.com/Zaytsev-V/etl_pipeline) | Исследую показатели с сайта Всемирного Банка | python / pandas / sql / datalens |
-| 2 | [Spotify](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Что влияет на популярность музыкальных треков с сервиса Spotify? | python / pandas/ matplotlib / seaborn |
-| 3 | [Coffee](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Выявляю тренды и закономерности в продажах кофейни в Кейптауне за год | python / pandas/ matplotlib / seaborn |
-| 4 | [Clothing Store](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Clothing_store) | Применяю ABC, XYZ и RFM анализы для магазина одежды | python / pandas/ matplotlib / seaborn |
+| 1 | [ETL Pipeline: Мировая статистика](https://github.com/Zaytsev-V/etl_pipeline) | Автоматизация сбора и обновления данных. Создал пайплайн: выгрузка через API, трансформация в Python, загрузка в БД. Результат — готовая витрина данных для аналитики. | python / API / sql / datalens |
+| 2 | [ABC-XYZ и RFM-анализ ритейлера](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Clothing_store) | Оптимизация товарных запасов и работа с клиентами. Сегментировал базу клиентов и товаров, выявил низкомаржинальные категории. Сформулировал рекомендации по сокращению стоков неликвида. | python / pandas/ matplotlib |
+| 3 | [Spotify: Факторы популярности треков](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Spotify) | Исследование драйверов популярности контента. Проанализировал аудио-характеристики треков. Выявил признаки, влияющие на попадание в чарты, что применимо для рекомендательных систем. | python / pandas/ matplotlib / seaborn |
+| 4 | [Аналитика кофейни (Кейптаун)](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PET_PROJECTS/Coffee) | Поиск точек роста выручки. Провел временной анализ продаж, выявил пиковые часы и тренды спроса. Дал рекомендации по изменению ассортимента и графика работы персонала. | python / pandas/ matplotlib / seaborn |
 
-## Практикум
-| # | Проект | Описание | Стек |
+
+## Проекты профессиональной переподготовки
+*Практическое закрепление навыков работы с данными на реальных кейсах.*
+| # | Проект | Бизнес-задача | Стек |
 | -- | ------ | ----- | ------ |
-| 1 | [Секреты Темнолесья](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/fantasy_MMO) | Анализ влияния характеристик игроков и их игровых персонажей на трату реальных денег в ММО-игре | PostgreSQL |
-| 2 | [Недвижимость СПб и области](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/estate_ad_hoc_sql) | Ищу самые перспективные сегменты недвижимости СПб и Ленинградской области | DataLens / PostgreSQL |
-| 3 | [Общепит Москвы](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/Moscow_public_catering_market) | Исследую, в каком районе Москвы открыть заведение общественного питания | python / pandas/ matplotlib / seaborn / phik_matrix |
-| 4 | [A/B-тест](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/aed3f8c8a9738933296d5829fb56c81bcf67b215/PRACTICUM/AB_test_entertainment_app) | Проверяю, повлиял ли новый алгоритм рекомендаций развлекательного приложения на рост кол-ва "успешных сессий" | python / pandas / matplotlib / scipy |
-| 5 | [Афиша](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/Ticket_service_Afisha) | Исследую падение спроса в онлайн-сервисе по бронированию билетов Афиша | DataLens / python / pandas / matplotlib / scipy |
+| 1 | [Анализ успешности игроков ММО](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/fantasy_MMO) | Разработка стратегии монетизации. Выявил ключевые факторы, влияющие на платежеспособность игроков. Предложил таргетированные акции для повышения LTV. | PostgreSQL |
+| 2 | [Инвестиционный анализ недвижимости СПб](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/estate_ad_hoc_sql) | Поиск объектов для инвестиций. Определил перспективные районы и типы недвижимости с высокой ликвидностью и доходностью на основе данных объявлений. | DataLens / PostgreSQL |
+| 3 | [Геоаналитика общепита Москвы](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/Moscow_public_catering_market) | Выбор локации для нового заведения. Проанализировал насыщенность рынка, цены и предпочтения аудитории по районам. Выдал рекомендацию по оптимальному месту открытия. | python / pandas/ matplotlib / seaborn / phik_matrix |
+| 4 | [A/B тестирование алгоритма рекомендаций](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/aed3f8c8a9738933296d5829fb56c81bcf67b215/PRACTICUM/AB_test_entertainment_app) | Проверка эффективности внедрения нового алгоритма. Провел статистический анализ, подтвердил значимый прирост метрик. Обосновал целесообразность внедрения. | python / pandas / matplotlib / scipy |
+| 5 | [Анализ оттока клиентов (Афиша)](https://github.com/Zaytsev-V/data-analytics-portfolio/tree/main/PRACTICUM/Ticket_service_Afisha) | Борьба с churn-rate. Исследовал поведение пользователей, выявил этапы воронки с максимальным оттоком. Сформулировал гипотезы для удержания клиентов. | DataLens / python / pandas / matplotlib / scipy |
 
