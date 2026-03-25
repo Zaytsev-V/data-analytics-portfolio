@@ -5,6 +5,7 @@
 
 - Построен ETL-пайплайн: сбор данных ГИБДД и погоды (Open-Meteo API), загрузка в Staging, нормализация в DWH (PostgreSQL).
 - Спроектирована аналитическая витрина данных ([SQL](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/DTP/VIEW)), реализован feature engineering (возраст авто, категория погоды, опыт водителя).
+- На основе витрины данных построен [Дашборд](https://datalens.yandex/gdfzfire8huc0).
 - Выявлены неочевидные инсайты о влиянии психологии водителей и возраста автомобиля на тяжесть аварий.
 
 **Технологический стек**
