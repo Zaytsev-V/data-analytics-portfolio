@@ -42,7 +42,7 @@ Yandex DataLens: Визуализация, построение интеракт
 
 Созданы производные признаки: `car_age`, `exp_group`, `weather_category`, `is_night`.
 
-Проведен разведочный анализ данных (EDA) в Jupyter Notebook: расчет описательных статистик и выявление поведенческих паттернов.
+Проведен разведочный анализ данных ([EDA](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/DTP/analysis_dtp.ipynb)) в Jupyter Notebook: расчет описательных статистик и выявление поведенческих паттернов.
 
 4. **Визуализация**:
 
