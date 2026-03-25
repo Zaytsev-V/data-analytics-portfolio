@@ -1,0 +1,127 @@
+CREATE OR REPLACE VIEW wdtp.v_fct_accidents_weather AS
+
+WITH weather_map AS (
+    -- Словарь категорий погоды (WMO коды)
+    SELECT weather_code, 
+        CASE 
+            WHEN weather_code IN (0, 1) THEN 'Ясно'
+            WHEN weather_code IN (2, 3) THEN 'Облачно'
+            WHEN weather_code BETWEEN 51 AND 67 THEN 'Дождь'
+            WHEN weather_code BETWEEN 71 AND 77 THEN 'Снег'
+            WHEN weather_code >= 80 THEN 'Ливень/Гроза'
+            ELSE 'Прочее'
+        END as weather_category
+    FROM wdtp.weather_codes
+),
+road_map AS (
+    -- Группировка состояний дороги
+    SELECT DISTINCT road_surface_condition,
+        CASE 
+            WHEN road_surface_condition = 'Сухое' THEN 'Сухое'
+            WHEN road_surface_condition IN ('Мокрое', 'Залитое (покрытое) водой') THEN 'Мокрое'
+            WHEN road_surface_condition IN ('Заснеженное', 'Со снежным накатом') THEN 'Снежное'
+            WHEN road_surface_condition IN ('Гололедица', 'Обработанное противогололедными материалами') THEN 'Гололедица'
+            ELSE 'Прочее'
+        END as road_condition_group
+    FROM wdtp.accident_details
+),
+drivers_agg AS (
+    -- Сначала ранжирую водителей внутри одного ДТП
+    -- Приоритет: 1. Те, у кого есть нарушения (кроме "Нет нарушений")
+    --             2. Порядок в протоколе (participant_sequence)
+    SELECT DISTINCT ON (card_id)
+        card_id,
+        gender as driver_gender,
+        driving_exp,
+        CASE 
+            WHEN alcohol_level IS NOT NULL AND alcohol_level != '00' THEN TRUE 
+            ELSE FALSE 
+        END as driver_is_drunk,
+        violations
+    FROM wdtp.participants
+    WHERE participant_role = 'Водитель'
+    ORDER BY 
+        card_id,
+        -- Сортирую так, чтобы "Виновник" оказался первым:
+        CASE 
+            WHEN violations IS NOT NULL AND violations NOT IN ('Нет нарушений', '-') THEN 0 
+            ELSE 1 
+        END ASC,
+        participant_sequence ASC
+),
+vehicles_agg AS (
+    -- Беру первую машину для каждого ДТП
+    SELECT DISTINCT ON (card_id)
+        card_id,
+        vehicle_brand,
+        manufacture_year,
+        vehicle_color
+    FROM wdtp.vehicles
+    WHERE manufacture_year >= 1970
+    ORDER BY card_id
+)
+SELECT 
+    -- Ключи и время
+    a.card_id,
+    (a.accident_date + a.accident_time) as accident_timestamp,
+    EXTRACT(YEAR FROM a.accident_date) as year,
+    EXTRACT(MONTH FROM a.accident_date) as month,
+    EXTRACT(DOW FROM a.accident_date) as day_of_week, -- 0=Воскресенье, 1=Понедельник...
+    EXTRACT(HOUR FROM a.accident_time) as hour,
+    NOT w.is_day as is_night, -- True если ночь
+    
+    -- Локация
+    ad.settlement_name as city,
+    a.district_name,
+    ad.street_name,
+    ad.latitude,
+    ad.longitude,
+    
+    -- Факты ДТП
+    a.accident_type,
+    a.vehicles_count,
+    a.killed_cnt, 
+    a.wounded_cnt,
+    (a.killed_cnt + a.wounded_cnt) as total_victims,
+    
+    -- Погода
+    wm.weather_category,
+    w.temperature_2m,
+    w.precipitation,
+    
+    -- Дорога
+    rm.road_condition_group,
+    
+    -- Водитель
+    da.driver_gender,
+    CASE 
+        WHEN da.driving_exp BETWEEN 0 AND 2 THEN 'Новичок'
+        WHEN da.driving_exp BETWEEN 3 AND 5 THEN 'Молодой'
+        WHEN da.driving_exp BETWEEN 6 AND 10 THEN 'Опытный'
+        ELSE 'Ветеран'
+    END as driver_exp_group,
+    da.driver_is_drunk,
+    
+    -- Авто
+    va.vehicle_brand,
+    -- Возраст авто на момент аварии (Год аварии - Год выпуска)
+    (EXTRACT(YEAR FROM a.accident_date) - va.manufacture_year) as car_age,
+    va.vehicle_color
+    
+FROM wdtp.accidents a
+LEFT JOIN wdtp.accident_details ad ON a.card_id = ad.card_id
+
+-- Присоединяю погоду
+LEFT JOIN public.raw_weather_hourly w ON 
+    w.city = a.district_name AND 
+    w.timestamp = date_trunc('hour', a.accident_date + a.accident_time)
+    
+-- Присоединяю категории погоды
+LEFT JOIN weather_map wm ON w.weather_code = wm.weather_code
+
+-- Присоединяю категории дороги
+LEFT JOIN road_map rm ON ad.road_surface_condition = rm.road_surface_condition
+
+-- Присоединяю водителей и машины
+LEFT JOIN drivers_agg da ON a.card_id = da.card_id
+LEFT JOIN vehicles_agg va ON a.card_id = va.card_id;
