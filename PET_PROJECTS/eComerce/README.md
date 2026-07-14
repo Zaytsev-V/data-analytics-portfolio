@@ -48,7 +48,7 @@
 **Совокупный эффект: +12–14 млн ₽ за 2 года. При текущем убытке −7.3 млн ₽ это выводит бизнес в прибыль.**
 
 ## Файлы
-- `01_eda_data_cleaning` — тетрадка Jupyter Notebook с аудитом и очисткой данных, разведочным анализом.
+- [`01_eda_data_cleaning`](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/eComerce/01_eda_data_cleaning.ipynb) — тетрадка Jupyter Notebook с аудитом и очисткой данных, разведочным анализом.
 - `02_margin_analysis` — тетрадка Jupyter Notebook с расчётом юнит-экономики, анализом скидок и возвратов.
 - `03_rfm_cohort_ltv` — тетрадка Jupyter Notebook с RFM-сегментацией, когортным анализом и расчётом LTV.
 - `04_inventory_turnover` — тетрадка Jupyter Notebook с ABC-XYZ-анализом, оборачиваемостью и расчётом оптимального страхового запаса.
