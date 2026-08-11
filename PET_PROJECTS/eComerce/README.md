@@ -52,3 +52,4 @@
 - [`02_margin_analysis`](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/eComerce/02_margin_analysis.ipynb) — тетрадка Jupyter Notebook с расчётом юнит-экономики, анализом скидок и возвратов.
 - [`03_rfm_cohort_ltv`](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/eComerce/03_rfm_cohort_ltv.ipynb) — тетрадка Jupyter Notebook с RFM-сегментацией, когортным анализом и расчётом LTV.
 - [`04_inventory_turnover`](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/eComerce/04_inventory_turnover.ipynb) — тетрадка Jupyter Notebook с ABC-XYZ-анализом, оборачиваемостью и расчётом оптимального страхового запаса.
+- [Дашборд](https://github.com/Zaytsev-V/data-analytics-portfolio/blob/main/PET_PROJECTS/eComerce/dashboard/README.md)
